@@ -22,10 +22,6 @@ import model.DetailTransaksi;
 import model.Transaksi;
 import util.KoneksiDB;
 
-/**
- *
- * @author nafil
- */
 public class TransaksiServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -38,7 +34,6 @@ public class TransaksiServlet extends HttpServlet {
         try {
             Connection conn = KoneksiDB.getConnection();
 
-            // Ambil harga buku
             PreparedStatement psB = conn.prepareStatement("SELECT harga FROM buku WHERE id=?");
             psB.setInt(1, bukuId);
             ResultSet rs = psB.executeQuery();
@@ -46,8 +41,7 @@ public class TransaksiServlet extends HttpServlet {
             if(rs.next()){
                 harga = rs.getInt("harga");
             }
-
-            // Insert ke transaksi
+            
             PreparedStatement psT = conn.prepareStatement(
                 "INSERT INTO transaksi(nama_pembeli, total) VALUES(?,?)",
                 Statement.RETURN_GENERATED_KEYS
@@ -61,7 +55,6 @@ public class TransaksiServlet extends HttpServlet {
                 transaksiId = rsT.getInt(1);
             }
 
-            // Insert ke detail_transaksi
             PreparedStatement psD = conn.prepareStatement(
                 "INSERT INTO detail_transaksi(transaksi_id, buku_id, jumlah, harga) VALUES(?,?,?,?)"
             );

@@ -16,7 +16,7 @@ public class KoneksiDB {
                 conn = DriverManager.getConnection(
                     "jdbc:postgresql://localhost:5432/toko_buku",
                     "postgres",
-                    "pilah565"  // ganti sesuai password PostgreSQL kamu
+                    "pilah565" 
                 );
             } catch(ClassNotFoundException e){
                 e.printStackTrace();

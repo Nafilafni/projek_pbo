@@ -15,10 +15,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.util.List;
 import model.Kategori;
 
-/**
- *
- * @author nafil
- */
 public class KategoriServlet extends HttpServlet {
 
     @Override

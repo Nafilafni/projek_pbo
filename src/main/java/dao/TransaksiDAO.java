@@ -9,7 +9,6 @@ package dao;
  * @author nafil
  */
 
-
 import util.KoneksiDB;
 import model.Transaksi;
 import java.sql.*;
@@ -35,7 +34,6 @@ public class TransaksiDAO {
         return t;
     }
 
-    // ✅ Tambahkan ini
     public List<Transaksi> getAll(){
         List<Transaksi> list = new ArrayList<>();
         try{

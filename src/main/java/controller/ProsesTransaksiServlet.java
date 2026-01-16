@@ -16,10 +16,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import util.KoneksiDB;
 
-/**
- *
- * @author nafil
- */
 public class ProsesTransaksiServlet extends HttpServlet {
 
     @Override
@@ -33,7 +29,6 @@ public class ProsesTransaksiServlet extends HttpServlet {
 
         try (Connection conn = KoneksiDB.getConnection()) {
 
-            // Ambil harga buku
             PreparedStatement psB = (PreparedStatement) conn.prepareStatement("SELECT harga, stok FROM buku WHERE id=?");
             psB.setInt(1, bukuId);
             ResultSet rs = psB.executeQuery();
@@ -49,7 +44,6 @@ public class ProsesTransaksiServlet extends HttpServlet {
                 return;
             }
 
-            // Insert ke tabel transaksi
             PreparedStatement psT = (PreparedStatement) conn.prepareStatement(
                     "INSERT INTO transaksi(nama_pembeli, total) VALUES(?, ?)",
                     Statement.RETURN_GENERATED_KEYS
@@ -64,7 +58,6 @@ public class ProsesTransaksiServlet extends HttpServlet {
                 transaksiId = rsT.getInt(1);
             }
 
-            // Insert ke tabel detail_transaksi
             PreparedStatement psD = (PreparedStatement) conn.prepareStatement(
                     "INSERT INTO detail_transaksi(transaksi_id, buku_id, jumlah, harga) VALUES(?,?,?,?)"
             );
@@ -74,7 +67,6 @@ public class ProsesTransaksiServlet extends HttpServlet {
             psD.setInt(4, harga);
             psD.executeUpdate();
 
-            // Update stok buku
             PreparedStatement psU = (PreparedStatement) conn.prepareStatement(
                     "UPDATE buku SET stok = stok - ? WHERE id = ?"
             );
@@ -82,7 +74,6 @@ public class ProsesTransaksiServlet extends HttpServlet {
             psU.setInt(2, bukuId);
             psU.executeUpdate();
 
-            // Redirect ke konfirmasi
             response.sendRedirect("konfirmasi.jsp?transaksi_id=" + transaksiId);
 
         } catch (Exception e) {

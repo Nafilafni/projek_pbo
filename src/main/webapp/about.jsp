@@ -52,7 +52,7 @@
                                         border-radius: 50%;
                                         padding: 5px;
                                         background: linear-gradient(45deg, #3b82f6, #a855f7);">
-                                        <img src="images/foto1.jpg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+1&background=0D8ABC&color=fff'">
+                                        <img src="images/pilah.jpeg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+1&background=0D8ABC&color=fff'">
                                     </div>
                                     <h4 class="text-white fw-bold">Nafila Afni Alqibtiyah</h4>
                                     <p class="text-primary fw-bold small uppercase">TEKNIK INFORMATIKA</p>
@@ -71,7 +71,7 @@
                                         border-radius: 50%;
                                         padding: 5px;
                                         background: linear-gradient(45deg, #3b82f6, #a855f7);">
-                                        <img src="images/foto2.jpg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+2&background=a855f7&color=fff'">
+                                        <img src="images/angga.jpeg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+2&background=a855f7&color=fff'">
                                     </div>
                                     <h4 class="text-white fw-bold">angga kurniansyah</h4>
                                     <p class="text-primary fw-bold small uppercase">TEKNIK INFORMATIKA</p>
@@ -90,7 +90,7 @@
                                         border-radius: 50%;
                                         padding: 5px;
                                         background: linear-gradient(45deg, #3b82f6, #a855f7);">
-                                        <img src="images/foto2.jpg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+2&background=a855f7&color=fff'">
+                                        <img src="images/padil.jpeg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+2&background=a855f7&color=fff'">
                                     </div>
                                     <h4 class="text-white fw-bold">Fadhil Muhammad Zain </h4>
                                     <p class="text-primary fw-bold small uppercase">TEKNIK INFORMATIKA</p>
@@ -109,7 +109,7 @@
                                         border-radius: 50%;
                                         padding: 5px;
                                         background: linear-gradient(45deg, #3b82f6, #a855f7);">
-                                        <img src="images/foto2.jpg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+2&background=a855f7&color=fff'">
+                                        <img src="images/gilang.jpeg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+2&background=a855f7&color=fff'">
                                     </div>
                                     <h4 class="text-white fw-bold">Gilang Ramadan</h4>
                                     <p class="text-primary fw-bold small uppercase">TEKNIK INFORMATIKA</p>
@@ -128,11 +128,11 @@
                                         border-radius: 50%;
                                         padding: 5px;
                                         background: linear-gradient(45deg, #3b82f6, #a855f7);">
-                                        <img src="images/foto2.jpg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+2&background=a855f7&color=fff'">
+                                        <img src="images/anis.jpeg" class="w-100 h-100 rounded-circle" style="object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Nafil+2&background=a855f7&color=fff'">
                                     </div>
                                     <h4 class="text-white fw-bold">Anis Adriyani </h4>
                                     <p class="text-primary fw-bold small uppercase">TEKNIK INFORMATIKA</p>
-                                    <p class="text-secondary opacity-75">"NIM: 0110224013 - Penanggung jawab Backend & Database."</p>
+                                    <p class="text-secondary opacity-75">"NIM: 0110224013 - Penanggung jawab ERD Database."</p>
                                 </div>
                             </div>
                         </div>

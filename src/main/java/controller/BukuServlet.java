@@ -19,7 +19,6 @@ public class BukuServlet extends HttpServlet {
 
         BukuDAO dao = new BukuDAO();
 
-        // ===== DELETE (ADMIN ONLY) =====
         String deleteId = request.getParameter("delete");
         if (deleteId != null) {
             if (user != null && user.getRole().equals("ADMIN")) {
@@ -29,7 +28,6 @@ public class BukuServlet extends HttpServlet {
             return;
         }
 
-        // ===== EDIT FORM (ADMIN ONLY) =====
         String editId = request.getParameter("edit");
         if (editId != null) {
             if (user != null && user.getRole().equals("ADMIN")) {
@@ -43,7 +41,6 @@ public class BukuServlet extends HttpServlet {
             }
         }
 
-        // ===== TAMPILKAN DAFTAR BUKU (SEMUA USER) =====
         List<Buku> list = dao.getAll();
         request.setAttribute("listBuku", list);
         request.getRequestDispatcher("buku.jsp").forward(request, response);
